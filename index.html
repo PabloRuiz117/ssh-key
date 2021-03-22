@@ -10,5 +10,17 @@
     <header>
       <h1>GIT</h1>
     </header>
+
+    <h2>Generar llaves ssh en local</h2>
+    <li>ssh-keygen -t rsa -b 4096 -C "email@.com"</li>
+    <h2>Comprobar proceso ssh y agregarlo (Windows/Linux)</h2>
+    <li>
+      eval $(ssh-agent -s) => Retorna el PID donde se esta ejecutando el proceso
+      ssh
+    </li>
+    <li>
+      ssh-add ~/.ssh/id_rsa => Agregamos la llave privada a nuestro sistema
+      porque no basta que solo exista
+    </li>
   </body>
 </html>
